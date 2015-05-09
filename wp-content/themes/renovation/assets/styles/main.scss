@@ -34,6 +34,7 @@ body{
 		.container{
 			background-color: $color--red;
 			background-image: url(../images/nav__bg.png);
+			width: auto;
 			nav{
 				ul{
 					li{
@@ -52,7 +53,7 @@ body{
 						a{
 							color: $color--red;
   							background-color: $color--white;
-  							padding-bottom: 0;
+  							padding-bottom: 7px;
 						}
 					&:after{
 						content: url(../images/nav__item--active--2.png);
@@ -67,9 +68,64 @@ body{
 	}
 }
 
+.logo{
+	margin: 0;
+	padding: 0;
+	a{
+		span{
+			position: relative;
+			display: block;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.header--super{
+	.wrap.lang{
+		background-color: $color--white--smoke;
+		.content{
+		@include make-row(); 
+			.header__lang{
+				text-align: right;
+				padding: 3px 0;
+			}
+		}
+	}
+	.wrap.branding{
+		padding: 20px 0; 
+		.content{
+		@include make-row();  
+			.header__branding, .header__info{
+				 @include make-sm-column(6);
+			}
+			.header__info{
+				text-align: right;
+				padding-top: 32px;
+			}
+		}
+	}
+}
+.header__branding{
+	
+}
+
 @media (min-width: $screen-sm){
 	.navbar-nav>li>a {
 	  padding-top: 10px;
 	  padding-bottom: 10px;
+	}
+	.logo {
+		a{
+			width: 213px;
+			height: 82px;
+			display: inline-block;
+			line-height: 1;
+			margin: 0;
+			background-image: url(../images/logo--sm.png);
+		}
 	}
 }

@@ -1,3 +1,4 @@
+<div class="wrap header container">
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -7,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand visible-xs" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand visible-xs" href="<?= esc_url(home_url('/')); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
     </div>
  
     <nav class="collapse navbar-collapse" role="navigation">
@@ -19,3 +20,4 @@
     </nav>
   </div>
 </header>
+</div>
