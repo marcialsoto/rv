@@ -16,4 +16,60 @@
 @import "layouts/_footer";
 @import "layouts/_pages";
 @import "layouts/_posts";
-body{color: red;}
+
+body{
+	background-color: $color--gray;
+}
+
+.wrap{
+	background-color: $color--white;
+}
+
+.navbar{
+	min-height: 40px;
+	margin-bottom: 0;
+	&.navbar-default{
+		background-color: transparent;
+		border-color: transparent;
+		.container{
+			background-color: $color--red;
+			background-image: url(../images/nav__bg.png);
+			nav{
+				ul{
+					li{
+						a{
+							text-transform: uppercase;
+							color: $color--white
+						}
+					}
+					li.current-menu-item.active{
+					&:before{
+						content: url(../images/nav__item--active.png);
+						position: absolute;
+						top: 0;
+						left: -7px;
+					}
+						a{
+							color: $color--red;
+  							background-color: $color--white;
+  							padding-bottom: 0;
+						}
+					&:after{
+						content: url(../images/nav__item--active--2.png);
+						position: absolute;
+						top: 0;
+						right: -7px;
+					}
+					}	
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm){
+	.navbar-nav>li>a {
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	}
+}

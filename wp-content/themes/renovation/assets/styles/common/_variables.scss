@@ -6,4 +6,7 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #27ae60;
+$color--gray: 			#cccccc;
+$color--red:			#a6040f;
+$color--white:			#ffffff;
+$brand-primary:         $color--red;
