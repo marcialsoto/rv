@@ -32,6 +32,7 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $('.owl-carousel').owlCarousel();    
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
