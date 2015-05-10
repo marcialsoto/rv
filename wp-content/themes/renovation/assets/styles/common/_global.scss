@@ -1,1 +1,3 @@
-
+@mixin ff-ss($font) {
+	font-family: '#{$font}', sans-serif;
+}

@@ -1,11 +1,13 @@
 <header class="header--super">
 	<div class="wrap container lang">
 		<div class="content">
-			<div class="container">
 				<div class="header__lang">
-					Lenguaje
+					<?php
+				      
+				        wp_nav_menu( array('menu' => 'Language Navigation' ));
+				      
+				     ?>
 				</div>
-			</div>
 		</div>
 	</div>
 	<div class="wrap container branding">
