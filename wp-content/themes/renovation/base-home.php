@@ -17,23 +17,13 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header', 'super');
       get_template_part('templates/header');
     ?>
+    <div class="wrap slider__main container" role="document">
+      <?php get_template_part('templates/slider', 'main'); ?>
+    </div>
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main" role="main">
-        	<div class="owl-carousel">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
-</div>
+          
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Config\display_sidebar()) : ?>

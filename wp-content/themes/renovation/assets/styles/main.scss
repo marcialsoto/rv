@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6{
 	background-color: $color--white;
 	padding-right: 30px;
 	padding-left: 30px;
+	&.slider__main{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 }
 
 .navbar{
@@ -219,6 +223,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media (min-width: $screen-sm){
+
 	.navbar-nav>li>a {
 	  padding-top: 10px;
 	  padding-bottom: 10px;
@@ -235,5 +240,36 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.navbar-form.navbar-search{
 		width: 18%;
+	}
+	#slider__main{
+		margin: -20px auto 0;
+		.owl-item{
+			.item{
+				margin: 0 auto;
+				min-height: 470px;
+				.slider__content{
+					padding: 50px 0;
+					text-align: center;
+					@include make-sm-column(10);
+					float: none !important;
+					margin: auto;
+					h2{
+						span{
+							color: $color--red;
+						}
+					}
+				}
+				.slider__cta{
+					text-align: center;
+					padding-top: 180px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-md){
+	.container {
+		width: 970px;
 	}
 }
