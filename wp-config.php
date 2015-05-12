@@ -33,6 +33,9 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+define('DISALLOW_FILE_EDIT', TRUE); // Sucuri Security: Tue, 12 May 2015 17:53:54 +0000
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -42,14 +45,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '?^Btrj[bHW68L1w;Y#X|jis6o~sRmbg,MT#SVXy|9Bbkuk*N|+,L2Q(Nx-$w6BlG');
+define('SECURE_AUTH_KEY',  ' 81J^#e!x$B8&xXrCJf{)}a~4hgXZ8(y)f/}F;GD;zqvP{;v7b $-DlI&%I1E<sR');
+define('LOGGED_IN_KEY',    'A:|C1`K+N]p0lo-GOP<NM%$+P&(zoAa:8mC)/?7RsZma+$o]pHeu;/JsR;9L7@1t');
+define('NONCE_KEY',        '~oyX8LmaLvxzU-`A+,]z`38n|# [@;X)i}K~A5vch_[]mNld*{/SYa+tzkSzVZLL');
+define('AUTH_SALT',        ' (hv<nGyy)4VGRPC:l2{r%y0y?w0|#7s<@sa$#5N#6JF92=LUbZWRG*N ]%KPB% ');
+define('SECURE_AUTH_SALT', ':xVcmeLa|VXvtgs7fT}A1h|9FbWR5ft-XZ.9Yd]o{219kWBuw^{@r{OzRxD!.{oo');
+define('LOGGED_IN_SALT',   '=^qu<|1uq8B%R-`dfa+|Q*k{-SlCh-(STnfx)i1UAw$/P%%#7E0E3-bq3K8]-N*H');
+define('NONCE_SALT',       'Z|>mf~5I22^ze0N(lzWf]PSOu{[xm+)6z1L0[iY&`hC8NO!jB91u*;JfVmV;7~93');
 
 /**#@-*/
 
@@ -70,13 +73,13 @@ $table_prefix  = 'rv_';
  */
 
 define('WP_ENV', 'development');
-/* define('WP_DEBUG', false); */
-ini_set('log_errors','On');
+define('WP_DEBUG', false);
+/*ini_set('log_errors','On');
 ini_set('display_errors','Off');
 ini_set('error_reporting', E_ALL );
 define('WP_DEBUG', false);
 define('WP_DEBUG_LOG', true);
-define('WP_DEBUG_DISPLAY', false);
+define('WP_DEBUG_DISPLAY', false);*/
 
 /* That's all, stop editing! Happy blogging. */
 
