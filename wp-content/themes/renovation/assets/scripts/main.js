@@ -33,7 +33,15 @@
       init: function() {
         // JavaScript to be fired on the home page
         $('#slider__main').owlCarousel({
-          items: 1
+          items: 1,
+          loop: true,
+          dots: false,
+          autoplay: true,
+          autoplayHoverPause: true,
+          animateOut: 'bounceOutRight',
+          animateIn: 'bounceInLeft',
+          nav: true,
+          navText: ["<span class='glyphicon glyphicon-menu-left' aria-hidden='true'></span>","<span class='glyphicon glyphicon-menu-right' aria-hidden='true'></span>"]
         });    
       },
       finalize: function() {

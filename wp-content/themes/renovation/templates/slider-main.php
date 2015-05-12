@@ -22,22 +22,26 @@
 		<?php } else { ?>
 			<div class="item">
 		<?php } ?>
-				<?php $url = get_field('url'); ?>
-				<?php $cta = get_field('boton'); ?>
+				
+				<?php $currentlang = get_bloginfo('language'); ?>
 				<div class="slider__content">
 					<h2><?php the_content(); ?></h2>
 				</div>
-				<?php if($url){ ?>
 					<div class="slider__cta">
-						<a href="<?php echo $url; ?>" class="btn btn-primary btn-lg">
-							<?php if($cta){ ?>
-								<?php echo $cta; ?>
-							<?php }else{ ?>
+						<?php if ( $currentlang == "en-US" ) { ?>
+							<a href="<?php echo bloginfo(url); ?>/submission" class="btn btn-primary btn-lg">
+								Submission
+							</a>
+						<?php }elseif ($currentlang == "fr-FR") {?>
+							<a href="<?php echo bloginfo(url); ?>/soumission" class="btn btn-primary btn-lg">
 								Soumission
-							<?php } ?>
-						</a>
+							</a>
+						<?php }else{?>
+							<a href="<?php echo bloginfo(url); ?>/soumission" class="btn btn-primary btn-lg">
+								Soumission
+							</a>
+						<?php } ?>
 					</div>
-				<?php } ?>	
 			</div>
 		<?php endwhile; ?>
 		<!-- end of the loop -->

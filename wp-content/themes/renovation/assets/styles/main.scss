@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6{
 
 .navbar{
 	min-height: 40px;
+	height: 40px;
 	margin-bottom: 0;
 	&.navbar-default{
 		background-color: transparent;
@@ -222,6 +223,10 @@ h1, h2, h3, h4, h5, h6{
 	}
 }
 
+.btn, .comment-form input[type=submit]{
+	border-radius: 0;
+}
+
 @media (min-width: $screen-sm){
 
 	.navbar-nav>li>a {
@@ -241,28 +246,64 @@ h1, h2, h3, h4, h5, h6{
 	.navbar-form.navbar-search{
 		width: 18%;
 	}
+
 	#slider__main{
-		margin: -20px auto 0;
-		.owl-item{
-			.item{
-				margin: 0 auto;
-				min-height: 470px;
-				.slider__content{
-					padding: 50px 0;
-					text-align: center;
-					@include make-sm-column(10);
-					float: none !important;
-					margin: auto;
-					h2{
-						span{
-							color: $color--red;
+		top: -20px;
+		background-color: $color--white--smoke;
+		.owl-stage-outer{
+			.owl-item{
+				.item{
+					margin: 0 auto;
+					min-height: 470px;
+					.slider__content{
+						padding: 50px 0;
+						text-align: center;
+						@include make-sm-column(10);
+						float: none !important;
+						margin: auto;
+
+						h2{
+							span{
+								color: $color--red;
+							}
 						}
 					}
+					.slider__cta{
+						text-align: center;
+						padding-top: 160px;
+					}
 				}
-				.slider__cta{
-					text-align: center;
-					padding-top: 180px;
+			}
+		}
+
+		.owl-controls{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			opacity: 0;
+			.owl-nav{
+				position: relative;
+				.owl-prev, .owl-next{
+					margin: 15px;
+					border-radius: 0;
+					background: $color--red;
+					&:hover{
+						background: $color--white;
+						color: $color--red
+					}
 				}
+				.owl-prev{
+					float: left;
+				}
+				.owl-next{
+					float: right;
+				}
+			}
+		}
+
+		&:hover{
+			.owl-controls{
+				opacity: 1;
 			}
 		}
 	}

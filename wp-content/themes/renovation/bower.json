@@ -10,7 +10,8 @@
     "modernizr": "2.8.2",
     "jquery": "1.11.2",
     "bootstrap-sass-official": "3.3.4",
-    "owl-carousel2": "*"
+    "owl-carousel2": "*",
+    "animate.css": "~3.2.6"
   },
   "overrides": {
     "owl-carousel2": {
@@ -18,7 +19,7 @@
         "./dist/assets/owl.carousel.css",
         "./dist/assets/owl.theme.default.css",
         "./dist/owl.carousel.js"
-        ]
+      ]
     },
     "modernizr": {
       "main": "./modernizr.js"
