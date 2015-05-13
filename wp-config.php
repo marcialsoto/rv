@@ -73,7 +73,7 @@ $table_prefix  = 'rv_';
  */
 
 define('WP_ENV', 'development');
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 /*ini_set('log_errors','On');
 ini_set('display_errors','Off');
 ini_set('error_reporting', E_ALL );

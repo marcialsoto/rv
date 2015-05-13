@@ -18,7 +18,8 @@
       endif;
       ?>
       <div class="navbar-form navbar-search navbar-right">
-            <?php get_search_form( $echo ); ?>
+
+            <?php $echo = true; get_search_form( $echo ); ?>
       </div>
     </nav>
   </div>

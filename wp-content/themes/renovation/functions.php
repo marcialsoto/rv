@@ -29,3 +29,41 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+/* Custom Login */
+
+function rv_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo--sm.png);
+            background-size: 213px 82px;
+            background-position: center top;
+            background-repeat: no-repeat;      
+            width: auto;  
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'rv_login_logo' );
+
+function rv_url_login( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'rv_url_login' );
+
+function rv_title_login() {
+    return 'R&V Renovation Impact';
+}
+add_filter( 'login_headertitle', 'rv_title_login' );
+
+function themeslug_enqueue_style() {
+  wp_enqueue_style( 'core', get_template_directory_uri() . '/dist/styles/login.css', false ); 
+}
+
+function themeslug_enqueue_script() {
+  wp_enqueue_script( 'jq-js', includes_url() . '/js/jquery/jquery.js?ver=1.11.2', true );
+  wp_enqueue_script( 'rc-js', 'https://www.google.com/recaptcha/api.js', false );
+  wp_enqueue_script( 'my-js', get_template_directory_uri() . '/dist/scripts/login.js', false );
+}
+
+add_action( 'login_enqueue_scripts', 'themeslug_enqueue_style', 10 );
+add_action( 'login_enqueue_scripts', 'themeslug_enqueue_script', 1 );
