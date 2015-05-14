@@ -37,6 +37,7 @@
           loop: true,
           dots: false,
           autoplay: true,
+          lazyLoad:true,
           autoplayHoverPause: true,
           animateOut: 'bounceOutRight',
           animateIn: 'bounceInLeft',

@@ -85,16 +85,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navbar{
-	min-height: 40px;
+	min-height: inherit;
 	height: 40px;
 	margin-bottom: 0;
 	&.navbar-default{
 		background-color: transparent;
 		border-color: transparent;
 		.container{
-			background-color: $color--red;
-			background-image: url(../images/nav__bg.png);
+			background: $color--red url(../images/nav__bg.png) repeat-x center top;
 			width: auto;
+			height: 40px;
 			nav{
 				ul{
 					li{
@@ -298,6 +298,12 @@ h1, h2, h3, h4, h5, h6{
 		.owl-stage-outer{
 			.owl-item{
 				.item{
+					background-repeat: no-repeat;
+					background-position: top center;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
 					margin: 0 auto;
 					min-height: 470px;
 					.slider__content{

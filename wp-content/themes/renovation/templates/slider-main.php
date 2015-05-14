@@ -18,7 +18,7 @@
 
 		<?php if (has_post_thumbnail( $post->ID ) ){ ?>
 		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-			<div class="item" style="background: url('<?php echo $image[0]; ?>')  no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+			<div class="item owl-lazy" data-src="<?php echo $image[0]; ?>">
 		<?php } else { ?>
 			<div class="item">
 		<?php } ?>

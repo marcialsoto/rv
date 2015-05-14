@@ -52,7 +52,7 @@ function rv_title_login() {
 add_filter( 'login_headertitle', 'rv_title_login' );
 
 function themeslug_enqueue_style() {
-  wp_enqueue_style( 'core', get_template_directory_uri() . '/dist/styles/login.css', false ); 
+  wp_enqueue_style( 'core', get_template_directory_uri() . '/assets/styles/login.css', false ); 
 }
 
 add_action( 'login_enqueue_scripts', 'themeslug_enqueue_style', 10 );
