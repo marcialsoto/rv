@@ -1,3 +1,7 @@
 @mixin ff-ss($font) {
 	font-family: '#{$font}', sans-serif;
 }
+
+body{
+	margin: 20px auto;
+}

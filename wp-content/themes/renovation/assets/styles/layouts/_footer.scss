@@ -1,0 +1,12 @@
+.content-info{
+	@include  ff-ss(jura);
+	font-size: 11px;
+	a{
+		color: $color--white--smoke;
+	}
+	.container{
+		background-color: $color--gray--darker;
+		color: $color--gray;
+		padding: 20px 30px;
+	}
+}
