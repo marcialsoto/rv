@@ -29,15 +29,15 @@
 				</div>
 					<div class="slider__cta">
 						<?php if ( $currentlang == "en-US" ) { ?>
-							<a href="<?php echo bloginfo(url); ?>/submission" class="btn btn-primary btn-lg">
+							<a href="<?php echo bloginfo( 'url' ); ?>/submission" class="btn btn-primary btn-lg">
 								Submission
 							</a>
 						<?php }elseif ($currentlang == "fr-FR") {?>
-							<a href="<?php echo bloginfo(url); ?>/soumission" class="btn btn-primary btn-lg">
+							<a href="<?php echo bloginfo( 'url' ); ?>/soumission" class="btn btn-primary btn-lg">
 								Soumission
 							</a>
 						<?php }else{?>
-							<a href="<?php echo bloginfo(url); ?>/soumission" class="btn btn-primary btn-lg">
+							<a href="<?php echo bloginfo( 'url' ); ?>/soumission" class="btn btn-primary btn-lg">
 								Soumission
 							</a>
 						<?php } ?>

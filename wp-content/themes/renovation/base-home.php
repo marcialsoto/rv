@@ -22,8 +22,8 @@ use Roots\Sage\Wrapper;
     </div>
     <div class="wrap container" role="document">
       <div class="content row">
-        <main class="main" role="main">
-          
+        <?php dynamic_sidebar('home-primary'); ?>
+        <main class="main" role="main">   
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Config\display_sidebar()) : ?>
