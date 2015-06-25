@@ -23,6 +23,9 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $( '.gallery>dl>dt>a' ).attr('data-lightbox', 'gallery');
+
+        $('[data-toggle="tooltip"]').tooltip();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
