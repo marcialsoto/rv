@@ -28,7 +28,11 @@ use Roots\Sage\Wrapper;
         </main><!-- /.main -->
         <?php if (Config\display_sidebar()) : ?>
           <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
+            <?php if ( is_page(array('À propos de nous', 'About us', 'Services', 'Service après sinistre', 'Services after disaster')) ) {?>
+              <?php get_template_part('templates/sidebar', 'menu'); ?>
+            <?php }else{ ?>
+              <?php include Wrapper\sidebar_path(); ?>
+            <?php } ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
       </div><!-- /.content -->
