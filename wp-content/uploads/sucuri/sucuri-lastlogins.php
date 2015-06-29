@@ -8,3 +8,4 @@
 {"user_id":1,"user_login":"rv","user_remoteaddr":"127.0.0.1","user_hostname":"msoto-PC","user_lastlogin":"2015-05-26 23:42:11"}
 {"user_id":1,"user_login":"rv","user_remoteaddr":"127.0.0.1","user_hostname":"msoto-PC","user_lastlogin":"2015-05-30 22:34:39"}
 {"user_id":1,"user_login":"rv","user_remoteaddr":"127.0.0.1","user_hostname":"msoto-PC","user_lastlogin":"2015-06-24 22:25:35"}
+{"user_id":1,"user_login":"rv","user_remoteaddr":"127.0.0.1","user_hostname":"msoto-PC","user_lastlogin":"2015-06-29 11:02:04"}

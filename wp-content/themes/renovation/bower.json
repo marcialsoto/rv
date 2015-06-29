@@ -12,7 +12,8 @@
     "bootstrap-sass-official": "3.3.4",
     "owl-carousel2": "*",
     "animate.css": "~3.2.6",
-    "lightbox2": "~2.7.4"
+    "lightbox2": "~2.7.4",
+    "font-awesome": "~4.3.0"
   },
   "overrides": {
     "owl-carousel2": {

@@ -17,10 +17,6 @@
         wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
       endif;
       ?>
-      <div class="navbar-form navbar-search navbar-right">
-
-            <?php $echo = true; get_search_form( $echo ); ?>
-      </div>
     </nav>
   </div>
 </header>
