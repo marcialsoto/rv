@@ -1,5 +1,11 @@
 <footer class="content-info" role="contentinfo">
   <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
+  	<div class="col-sm-12">
+		<?php get_template_part('templates/section', 'accreditations'); ?>
+	</div>
+    <div class="col-sm-12">
+    	<?php dynamic_sidebar('sidebar-footer'); ?>
+	</div>
+	
   </div>
 </footer>

@@ -40,4 +40,17 @@ section{
 			}
 		}
 	}
+	&.banner{
+		background-color: $color--red;
+		color: $color--white;
+		padding: 0 30px;
+		h3{
+			font-size: 22px;
+		}
+		.col-sm-3{
+			text-align: right;
+			padding-top: 18px;
+  			padding-bottom: 18px;
+		}
+	}
 }

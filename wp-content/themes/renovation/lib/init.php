@@ -66,9 +66,18 @@ function widgets_init() {
   ]);
 
   register_sidebar([
-    'name'          => __('Home', 'sage'),
-    'id'            => 'home-primary',
+    'name'          => __('Services', 'sage'),
+    'id'            => 'home-services',
     'before_widget' => '<section class="widget services %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
+    'name'          => __('Banner', 'sage'),
+    'id'            => 'home-banner',
+    'before_widget' => '<section class="widget banner %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'

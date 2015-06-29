@@ -27,9 +27,11 @@ use Roots\Sage\Wrapper;
         <section class="widget achievements">
           <?php get_template_part('templates/section', 'achievements'); ?>  
         </section>
+
         </main><!-- /.main -->
       </div><!-- /.content -->
     </div><!-- /.wrap -->
+    <?php get_template_part('templates/section', 'banner'); ?>
     <?php
       get_template_part('templates/footer');
       wp_footer();

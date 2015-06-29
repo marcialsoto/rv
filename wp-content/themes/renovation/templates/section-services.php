@@ -1,1 +1,1 @@
-<?php dynamic_sidebar('home-primary'); ?>
+<?php dynamic_sidebar('home-services'); ?>
