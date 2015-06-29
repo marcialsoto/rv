@@ -1,16 +1,18 @@
 <header class="header--super">
 	<div class="wrap container lang">
 		<div class="content">
-				<div class="header__lang">
+				<?php
+					if (has_nav_menu('social_navigation')) :
+						wp_nav_menu(['theme_location' => 'social_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
+					endif;
+				?>
+				<div class="header__lang navbar-right">
 					<?php
 				      
 				        wp_nav_menu( array('menu' => 'Language Navigation' ));
 				      
 				     ?>
 				</div>
-				<div class="navbar-form navbar-search navbar-right">
-            		<?php $echo = true; get_search_form( $echo ); ?>
-      			</div>
 		</div>
 	</div>
 	<div class="wrap container branding">
@@ -24,11 +26,6 @@
 					</h1>
 				</div>
 				<div class="header__info">
-					<ul class="list-inline social__menu">
-						<li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-					</ul>
-					<hr />
 					<?php dynamic_sidebar( 'sidebar-header' ); ?>
 				</div>
 			</div>

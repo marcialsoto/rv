@@ -46,7 +46,41 @@
           animateIn: 'bounceInLeft',
           nav: true,
           navText: ["<span class='glyphicon glyphicon-menu-left' aria-hidden='true'></span>","<span class='glyphicon glyphicon-menu-right' aria-hidden='true'></span>"]
-        });    
+        });   
+        
+        var sl__a = $('#slider__achievements');
+
+        sl__a.owlCarousel({
+          loop:true,
+          margin:10,
+          nav:false,
+          dots: false,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+      });
+
+       
+      $('.customNextBtn').click(function() {
+        sl__a.trigger('next.owl.carousel');
+        console.log('siguiente');
+      });
+
+      $('.customPrevBtn').click(function() {
+          // With optional speed parameter
+          // Parameters has to be in square bracket '[]'
+          sl__a.trigger('prev.owl.carousel', [300]);
+          console.log('atras');
+      });
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

@@ -22,15 +22,12 @@ use Roots\Sage\Wrapper;
     </div>
     <div class="wrap container" role="document">
       <div class="content row">
-        <?php dynamic_sidebar('home-primary'); ?>
         <main class="main" role="main">   
-          <?php include Wrapper\template_path(); ?>
+          <?php get_template_part('templates/section', 'services'); ?>
+        <section class="widget achievements">
+          <?php get_template_part('templates/section', 'achievements'); ?>  
+        </section>
         </main><!-- /.main -->
-        <?php if (Config\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php

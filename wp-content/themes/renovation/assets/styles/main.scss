@@ -12,10 +12,12 @@
 @import "components/_grid";
 @import "components/_wp-classes";
 @import "layouts/_header";
+
 @import "layouts/_sidebar";
 @import "layouts/_footer";
 @import "layouts/_pages";
 @import "layouts/_posts";
+@import "layouts/_home";
 
 @font-face {
   font-family: 'jura';
@@ -154,6 +156,18 @@ h1, h2, h3, h4, h5, h6{
 		@include make-row(); 
 		  margin-left: 0;
 		  margin-right: 0;
+		  #menu-menu-social{
+	  		li{
+	  			a{
+	  				padding-top: 3px;
+					padding-bottom: 3px;
+					color: $color--gray--dark;
+					&:hover{
+						color: $color--gray;
+					}
+	  			}
+	  		}
+		  }
 			.header__lang{
 				padding: 3px 0;
 				float:left;
@@ -170,22 +184,7 @@ h1, h2, h3, h4, h5, h6{
 			.header__info{
 				text-align: right;
 				font-size: 12px;
-				color: $color--gray--dark;
-
-				.social__menu{
-					margin-bottom: 0;
-					li{
-						a{
-							i{
-								font-size: 16px;
-							}
-						}
-					}
-				}
-				hr{
-					margin-bottom: 7px;
-					margin-top: 7px;
-				}
+				padding-top: 25px;
 			}
 		}
 	}
