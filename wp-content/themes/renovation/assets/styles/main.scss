@@ -156,18 +156,6 @@ h1, h2, h3, h4, h5, h6{
 		@include make-row(); 
 		  margin-left: 0;
 		  margin-right: 0;
-		  #menu-menu-social{
-	  		li{
-	  			a{
-	  				padding-top: 3px;
-					padding-bottom: 3px;
-					color: $color--gray--dark;
-					&:hover{
-						color: $color--gray;
-					}
-	  			}
-	  		}
-		  }
 			.header__lang{
 				padding: 3px 0;
 				float:left;
@@ -264,7 +252,7 @@ h1, h2, h3, h4, h5, h6{
 			padding-left: 0px;
 			padding-right: 0px;
 			a{
-				color: $color--gray--dark;
+				color: $color--gray--darker;
 				padding: 5px 10px;
 				img{
 					vertical-align: baseline;
@@ -273,7 +261,7 @@ h1, h2, h3, h4, h5, h6{
 		}
 		li.current-lang{
 			a{
-				color: $color--gray;
+				color: $color--gray--dark;
 				background-color: $color--white;
 			}
 		}
