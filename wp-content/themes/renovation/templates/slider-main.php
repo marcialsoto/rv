@@ -22,7 +22,8 @@
 		<?php } else { ?>
 			<div class="item">
 		<?php } ?>
-				
+				<a class="owl-prev mainPrevBtn" style=""><i class="fa fa-angle-left"></i></a>
+					<a class="owl-next mainNextBtn" style=""><i class="fa fa-angle-right"></i></a>
 				<?php $currentlang = get_bloginfo('language'); ?>
 				<div class="slider__content">
 					<h2><?php the_content(); ?></h2>

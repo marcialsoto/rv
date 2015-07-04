@@ -35,22 +35,33 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-        $('#slider__main').owlCarousel({
+        var sld__main = $('#slider__main');
+        sld__main.owlCarousel({
           items: 1,
           loop: true,
+          nav: false,
           dots: false,
           autoplay: true,
           lazyLoad:true,
-          autoplayHoverPause: true,
-          animateOut: 'bounceOutRight',
-          animateIn: 'bounceInLeft',
-          nav: true,
-          navText: ["<span class='glyphicon glyphicon-menu-left' aria-hidden='true'></span>","<span class='glyphicon glyphicon-menu-right' aria-hidden='true'></span>"]
-        });   
-        
-        var sl__a = $('#slider__achievements');
+          autoplayHoverPause: true
+         });  
 
-        sl__a.owlCarousel({
+          $('.mainNextBtn').click(function() {
+            sld__main.trigger('next.owl.carousel');
+              console.log('siguiente');
+          });
+
+          $('.mainPrevBtn').click(function() {
+          // With optional speed parameter
+          // Parameters has to be in square bracket '[]'
+          sld__main.trigger('prev.owl.carousel', [300]);
+            console.log('atras');
+          });
+
+        
+        var crs__a = $('#carousel__achievements');
+
+        crs__a.owlCarousel({
           loop:true,
           margin:10,
           nav:false,
@@ -71,14 +82,14 @@
 
        
       $('.customNextBtn').click(function() {
-        sl__a.trigger('next.owl.carousel');
+        crs__a.trigger('next.owl.carousel');
         console.log('siguiente');
       });
 
       $('.customPrevBtn').click(function() {
           // With optional speed parameter
           // Parameters has to be in square bracket '[]'
-          sl__a.trigger('prev.owl.carousel', [300]);
+          crs__a.trigger('prev.owl.carousel', [300]);
           console.log('atras');
       });
 
@@ -91,6 +102,69 @@
     'about_us': {
       init: function() {
         // JavaScript to be fired on the about us page
+      }
+    },
+    // About us page, note the change from about-us to about_us.
+    'realisations': {
+      init: function() {
+        // JavaScript to be fired on the about us page
+              // Slider achievements
+      var sld__a = $('#slider__achievements');
+
+        sld__a.owlCarousel({
+          loop:true,
+          nav:false,
+          dots: false,
+          autoplay: true,
+          items: 1,
+          autoHeight:true
+      });
+
+          $('.aNextBtn').click(function() {
+            sld__a.trigger('next.owl.carousel');
+              console.log('siguiente');
+          });
+
+          $('.aPrevBtn').click(function() {
+          // With optional speed parameter
+          // Parameters has to be in square bracket '[]'
+          sld__a.trigger('prev.owl.carousel', [300]);
+            console.log('atras');
+          });
+
+      $( '.item>a' ).attr('data-lightbox', 'gallery');
+
+      }
+    },
+    'achievements': {
+      init: function() {
+        // JavaScript to be fired on the about us page
+              // Slider achievements
+      var sld__a = $('#slider__achievements');
+
+        sld__a.owlCarousel({
+          loop:true,
+          nav:false,
+          dots: false,
+          autoplay: true,
+          items: 1,
+          autoHeight:true
+      });
+
+          $('.aNextBtn').click(function() {
+            sld__a.trigger('next.owl.carousel');
+              console.log('siguiente');
+          });
+
+          $('.aPrevBtn').click(function() {
+          // With optional speed parameter
+          // Parameters has to be in square bracket '[]'
+          sld__a.trigger('prev.owl.carousel', [300]);
+            console.log('atras');
+          });
+
+      $( '.item>a' ).attr('data-lightbox', 'gallery');
+
       }
     }
   };

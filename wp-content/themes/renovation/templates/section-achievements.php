@@ -32,7 +32,7 @@ $the_query = new WP_Query( $args ); ?>
 		<?php } ?>
 	</div>
 	<!-- pagination here -->
-	<div id="slider__achievements" class="owl-carousel">
+	<div id="carousel__achievements" class="owl-carousel">
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 

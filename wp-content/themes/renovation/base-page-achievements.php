@@ -18,23 +18,16 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap masshead__page container" role="document">
-      <?php get_template_part('templates/masshead', 'page'); ?>
+      <?php get_template_part('templates/masshead', 'page-realisations'); ?>
     </div>
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main" role="main">
-          
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Config\display_sidebar()) : ?>
           <aside class="sidebar" role="complementary">
-            <?php if ( is_page(array('À propos de nous', 'About us', 'Services', 'Service après sinistre', 'Services after disaster', 'Réalisations', 'Achievements')) ) {?>
-              <?php get_template_part('templates/sidebar', 'menu'); ?>
-            <?php }else if ( is_page(array('Contact Us', 'Contactez-Nous')) ) {?>
-              <?php get_template_part('templates/sidebar', 'contacto'); ?>
-            <?php }else{ ?>
-              <?php include Wrapper\sidebar_path(); ?>
-            <?php } ?>
+            <?php get_template_part('templates/sidebar', 'menu'); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
       </div><!-- /.content -->
