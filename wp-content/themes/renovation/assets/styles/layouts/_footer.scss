@@ -2,11 +2,11 @@
 	@include  ff-ss(jura);
 	font-size: 11px;
 	a{
-		color: $color--white--smoke;
+		color: $color--gray--darker;
 	}
 	.container{
-		background-color: $color--gray--darker;
-		color: $color--gray;
+		background-color: $color--gray--light;
+		color: $color--gray--darker;
 		padding: 20px 30px;
 	}
 }
